@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Expense Calculator</title>
+</head>
+<body>
+    <main>
+        
+        <section class="w-3/5 bg-gray-200 mx-auto">
+            <h1 class="text-5xl m-3 p-2 text-center">Money Master</h1>
+            <div class="flex flex-wrap gap-x-12">
+                <div class="m-3 mx-auto">
+                <img src="/images/money2.jpg" height="500px" width="500px">
+            </div>
+
+            <div class="">
+            <!-- Income field-->
+                <div class="content-center">
+                    <div>
+                    <h3 class="text-3xl text-center font-semibold mb-2">Income</h3>
+                    <p class="text-2xl text-right mb-2 p-3">Income:<input class="mx-3" type="text"> </p>
+                    </div>
+                <!-- Expense field -->
+                <div>
+                     <h3 class="text-3xl text-center font-semibold mb-2">Expense</h3>
+                     <p class="text-2xl text-right mb-2 p-3">Food:<input class="mx-3" type="text"> </p>
+                     <p class="text-2xl text-right mb-2 p-3">Rent:<input class="mx-3" type="text"> </p>
+                     <p class="text-2xl text-right mb-2 p-3">Clothes:<input class="mx-3" type="text"> </p>
+                </div>
+                <button class="rounded-none text-2xl font-semibold text-white p-2 my-5 mx-12 w-60 bg-blue-500 shadow-lg shadow-gray-500/50">Calculate</button>
+                </div>
+                <!-- total expense part -->
+                <div>
+                    <h3 class="text-2xl text-center font-semibold mb-5">Total Expense: 3000</h3>
+                    <h3 class="text-2xl text-center font-semibold mb-2">Balance: 4000</h3>
+                    <!-- saving section -->
+                    <div class="flex flex-wrap gap-x-12">
+                        <p class="text-2xl text-left mt-4 p-3">Save:<input class="mx-3 w-40 h-9" type="text"></p>
+                        <button class="rounded-none text-2xl font-semibold text-white p-2 my-5 mx-12 w-40 bg-blue-500 shadow-lg shadow-gray-500/50">Save</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
