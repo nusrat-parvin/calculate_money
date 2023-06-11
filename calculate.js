@@ -44,6 +44,7 @@ document.getElementById('btn-calc').addEventListener('click' , function(){
     //validate if expense is more the income
     if(totalExpenseAmount > incomeField){
         alert("Your expense is more then your income");
+        return;
     }
     else{
         setElementValue('total-expense' , totalExpenseAmount);
@@ -62,10 +63,8 @@ document.getElementById('btn-save').addEventListener('click' , function(){
 
     //validate saving amount
     if(getSaveValueField > 100){
-        alert("saving is more then income");
-    }
-    else{
-        alert("There is no income amount");
+        alert("you can not save more then income");
+        return;
     }
 
     const simplifiedValueOfSaveField = getSaveValueField / 100;
@@ -77,6 +76,7 @@ document.getElementById('btn-save').addEventListener('click' , function(){
     //validate savings is more then balance
     if(parcentAmount > currentAmountOfBalance){
         alert("you can't save more then your remaining income");
+        return;
     }
     else{
         //set the new amount to saving amount
